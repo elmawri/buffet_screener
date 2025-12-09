@@ -1,0 +1,18 @@
+# API Keys and Secrets
+config_local.py
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Excel files with data
+*.xlsx
+!Buffett_Qualitative_DataModel_Template.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
