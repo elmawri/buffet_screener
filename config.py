@@ -23,12 +23,20 @@ TICKERS = [
     # Add your remaining 11 tickers here
 ]
 
+
 # File paths
 EXCEL_FILE = "Buffett_Qualitative_DataModel_Template.xlsx"
 # API Keys - ADD YOUR KEYS HERE
 USE_SEC_EDGAR = None
 USE_FRED = None
 USE_FMP = None
+
+try:
+    from config_local import *
+except ImportError:
+    ANTHROPIC_API_KEY = None
+    FMP_API_KEY = None
+    FRED_API_KEY = None
 
 
 
